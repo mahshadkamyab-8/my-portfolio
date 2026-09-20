@@ -1,0 +1,152 @@
+@font-face {
+    font-family: 'vazir';
+    src: url('../fonts/vazir.ttf') format('truetype'),
+        url('../fonts/vazir.eot') format('eot'),
+        url('../fonts/vazir.woff') format('woff');
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'vazir';
+    direction: rtl;
+    height: 100vh;
+    background-color: #2893c4;
+    position: relative;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.navbar {
+    margin: auto;
+    width: 1400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .navbar ul {
+    list-style: none;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .navbar ul li a {
+    color: #ece0e0;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all .2s ease-in;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+header .navbar ul li a:hover {
+    color: rgb(255, 140, 0);
+}
+
+header .navbar span {
+    font-size: 23px;
+    font-weight: 900;
+    color: rgb(232, 220, 204);
+    letter-spacing: 2px;
+}
+
+.content {
+    width: 100%;
+
+}
+
+.content .contentBox {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+
+.content .contentBox .imgBox {
+    width: 50%;
+}
+
+.content .contentBox .imgBox img {
+    width: 95%;
+}
+
+.content .contentBox .textBox {
+    width: 50%;
+}
+
+.content .contentBox .textBox h2 {
+    color: #fff;
+    font-weight: 900;
+    font-size: 3.2rem;
+}
+
+
+.content .contentBox .textBox h2 span {
+    color: #0ac752;
+}
+
+.content .contentBox .textBox p {
+    color: #fff;
+    line-height: 25px;
+    margin: 20px 0;
+}
+
+.content .contentBox .textBox a {
+    text-decoration: none;
+    background: #0ac752;
+    padding: 10px;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.content ul.bottom {
+    position: absolute;
+    bottom: 40px;
+    left: 50px;
+    right: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.content ul.bottom li a img {
+    width: 170px;
+    text-decoration: none;
+    padding-right: 10px;
+
+}
+
+#para {
+    position: absolute;
+    color: #e1e0e0;
+    font-size: 17px;
+    top: 95%;
+    right: 84%;
+}

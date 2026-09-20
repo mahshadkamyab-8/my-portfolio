@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'vazir';
+    src: url('../fonts/vazir.eot'), format('eot'),
+        url('../fonts/vazir.ttf'), format('truetype');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    position: relative;
+    font-family: 'vazir';
+    height: 100vh;
+    width: 100%;
+    direction: rtl;
+    position: relative;
+    background-color: rgb(51, 42, 152);
+}
+
+.btn {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translateX(50%);
+    padding: 15px;
+    width: 16%;
+    font-size: 30px;
+    color: rgb(254, 254, 254);
+    background-color: cornflowerblue;
+    border: 1px solid cornflowerblue;
+    border-radius: 5px;
+    font-weight: 900;
+    cursor: pointer;
+    transition: all .1s ease-in-out;
+}
+
+.btn:hover {
+    background-color: rgb(24, 164, 239);
+}
+
+.alert {
+    position: absolute;
+    top: 8%;
+    right: 2%;
+    background-color: #ff2a00;
+    width: 18%;
+    height: 12%;
+    padding-right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+    /* border-bottom: 7px solid #bd2101; */
+    transition: all .4s ease-in;
+}
+
+.alert span {
+    color: white;
+    font-size: 40px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.alert p {
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+}
+
+.alert.hidden {
+    opacity: 0;
+    overflow: hidden;
+    transform: translateX(10%);
+
+}
+.para-p{
+    position: absolute;
+    color: #bfbcbc;
+    font-size: 17px;
+    top: 95%;
+    right: 84%;
+}

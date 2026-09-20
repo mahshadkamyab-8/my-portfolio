@@ -1,0 +1,190 @@
+@font-face {
+    font-family: 'vazir';
+    src: url('../fonts/vazir.eot'), format('eot'),
+        url('../fonts/vazir.woff'), format('woff'),
+        url('../fonts/vazir.woff2'), format('woff2');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'vazir';
+    background-image: url(./img/1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    direction: rtl;
+    height: 100vh;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+.container .hamburger {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    background-color: black;
+    padding: 8px;
+    gap: 8px;
+}
+
+.container .hamburger span {
+    width: 100%;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    transition: all .3s ease-in;
+}
+
+.container .hamburger:hover span {
+    background-color: red;
+}
+
+.container .closemenu {
+    width: 35px;
+    height: 35px;
+    position: relative;
+    cursor: pointer;
+}
+
+.container .closemenu span {
+    position: absolute;
+    top: 100%;
+    right: 20px;
+    width: 100%;
+    height: 4px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+
+.container .closemenu span:first-child {
+    transform: rotate(45deg);
+}
+
+.container .closemenu span:last-child {
+    transform: rotate(-45deg);
+}
+.container .closemenu:hover span{
+    background-color: rgb(213, 234, 23);
+}
+
+
+.container .layer1 {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    background-color: yellow;
+    transition: all .3s ease-in-out;
+    transition-delay: .9s;
+}
+
+.layer2,
+.layer3,
+.layer4 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+
+.container .layer2 {
+    width: 0;
+    height: 100%;
+    background-color: rgb(255, 0, 234);
+    transition: all .3s ease-in-out;
+    transition-delay: .7s;
+
+}
+
+.container .layer3 {
+    width: 0;
+    height: 100%;
+    background-color: rgb(0, 132, 255);
+    transition: all .3s ease-in-out;
+    transition-delay: .5s;
+
+}
+
+.container .layer4 {
+    width: 0;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgb(211, 105, 30);
+    transition: all .3s ease-in-out;
+    transition-delay: .3s;
+
+}
+
+.container .links ul{
+    position: absolute;
+    right: 5px;
+    width: 100%;
+    height: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 20px;
+    line-height: 60px;
+    list-style: none;
+
+}
+
+.container .links ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+    transition: all .2s ease;
+}
+
+.container .links a:hover {
+    border-bottom: 5px solid rgb(129, 29, 229);
+}
+
+.layer1.check {
+    width: 400px;
+    transition: .5s;
+    transition-delay: .3s;
+}
+
+.check .layer2 {
+    width: 380px;
+    transition: .5s;
+    transition-delay: .5s;
+}
+
+.check .layer3 {
+    width: 360px;
+    transition: .5s;
+    transition-delay: .7s;
+}
+
+.check .layer4 {
+    width: 340px;
+    transition: .5s;
+    transition-delay: .9s;
+}
+#para {
+    position: absolute;
+    color: #080808;
+    font-size: 17px;
+    top: 95%;
+    right: 84%;
+}
