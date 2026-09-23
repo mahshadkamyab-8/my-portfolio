@@ -48,7 +48,7 @@ header {
 
 header .navbar ul {
     list-style: none;
-    width: 30%;
+    width: 40%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -80,6 +80,8 @@ header .navbar span {
 }
 
 .content .contentBox {
+    position: absolute;
+    top: 25%;
     width: 100%;
     display: flex;
     align-items: center;
@@ -104,6 +106,7 @@ header .navbar span {
     color: #fff;
     font-weight: 900;
     font-size: 3.2rem;
+    direction: ltr;
 }
 
 
@@ -113,14 +116,19 @@ header .navbar span {
 
 .content .contentBox .textBox p {
     color: #fff;
-    line-height: 25px;
-    margin: 20px 0;
+    line-height: 28px;
+    text-align: justify;
+    margin: 10px;
+    direction: ltr;
 }
 
 .content .contentBox .textBox a {
+    position: absolute;
+    right: 90%;
     text-decoration: none;
     background: #0ac752;
     padding: 10px;
+    margin-top: 15px;
     color: #fff;
     border-radius: 5px;
 }
@@ -129,7 +137,7 @@ header .navbar span {
     position: absolute;
     bottom: 40px;
     left: 50px;
-    right: 50px;
+    right: 0px;
     display: flex;
     align-items: center;
     justify-content: center;
