@@ -2,6 +2,8 @@ const closebtn = document.querySelector('#btn1');
 const transbtn = document.querySelector('#btn2');
 let mainsec = document.querySelector('.main-sec');
 let paragraph = document.querySelector('#para');
+const hamburger = document.querySelector('.hamburger');
+const main_nav = document.getElementById('main--nav');
 
 
 setTimeout(function () {
@@ -27,3 +29,8 @@ transbtn.onclick = () => {
 
     paragraph.style.direction = 'ltr';
 };
+
+hamburger.onclick = () =>{
+    hamburger.classList.toggle('active');
+    main_nav.classList.toggle('active')
+}

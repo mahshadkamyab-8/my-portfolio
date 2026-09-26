@@ -10,11 +10,14 @@
 }
 
 body {
-    width: 90%;
-    height: 90vh;
+    width: 100%;
+    height: 100vh;
     font-family: 'vazir';
     align-items: center;
     justify-content: center;
+    background-image: url(../stuff/Neww.png);
+    object-fit: contain;
+    background-repeat: no-repeat;
     background-color: rgb(181, 176, 176);
     overflow: hidden;
 
@@ -25,6 +28,42 @@ h2 {
     color: white;
     font-size: 22px;
 }
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    width: 35px;
+}
+
+.hamburger span {
+    display: block;
+    width: 30px;
+    height: 4px;
+    margin: 5px 0;
+    background-color: #ffffff;
+    transition: 0.3s;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}
+
+.hamburger:hover span {
+    background-color: rgb(246, 255, 0);
+}
+
+.hamburger.active:hover span {
+    background-color: rgb(152, 13, 155);
+}
+
 
 .navbar {
     position: absolute;
@@ -89,38 +128,39 @@ h2 {
     visibility: visible;
     pointer-events: auto;
 }
+
 /* Projects */
-#nav1 > span:hover {
+#nav1>span:hover {
     color: rgb(242, 255, 0);
 }
 
 /* Front-End */
-#nav3 > a:hover {
+#nav3>a:hover {
     color: #ff9500;
 }
 
 /* Front-End projects */
-#nav4 > li > a:hover {
+#nav4>li>a:hover {
     color: #1f1d1d;
 }
 
 /* Photoshop */
-#nav5 > a:hover {
+#nav5>a:hover {
     color: #ff9500;
 }
 
 /* Photoshop projects */
-#nav6 > li > a:hover {
-   color: #1f1d1d;
+#nav6>li>a:hover {
+    color: #1f1d1d;
 }
 
 /* Course Certificates */
-#nav7 > span:hover {
+#nav7>span:hover {
     color: rgb(242, 255, 0);
 }
 
 /* Certificates */
-#nav8 > li > a:hover {
+#nav8>li>a:hover {
     color: #ff9500;
 }
 
@@ -199,11 +239,6 @@ h2 {
     text-align: center;
 
 
-}
-
-.background img {
-    object-fit: contain;
-    background-repeat: no-repeat;
 }
 
 section {
@@ -298,4 +333,131 @@ body::before {
 body.dark::before {
     opacity: 1;
     visibility: visible;
+}
+
+/*ریسپاسیو */
+@media (max-width: 500px) {
+    body {
+        background-image: none;
+        background-color: #66441d;
+    }
+
+    h2 {
+        font-size: 15px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .navbar {
+        left: 2%;
+        width: 90%;
+        height: 1%;
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+    }
+
+    .main-nav {
+        position: absolute;
+        top: 130%;
+        left: 8%;
+        background-color: #d92b5c;
+        height: 10vh;
+        width: 80%;
+        padding: 0 10px;
+        display: none;
+        align-items: center;
+        justify-content: space-around;
+        border-radius: 5px;
+    }
+
+    .main-nav.active {
+        display: flex;
+    }
+
+    .main-nav span {
+        font-size: 13px;
+    }
+
+    .main-nav a {
+        font-size: 11px;
+    }
+
+    #nav1 #nav2 {
+        position: absolute;
+        top: 75%;
+        left: 12%;
+        background-color: #b52727;
+        display: flex;
+        flex-direction: column;
+        width: 15%;
+        height: 110%;
+        padding-top: 0;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        box-shadow: 0 20px 30px #6f6f6f;
+    }
+
+    #nav7 #nav8 {
+        position: absolute;
+        top: 75%;
+        left: 58%;
+        background-color: #b52727;
+        display: flex;
+        flex-direction: column;
+        width: 18%;
+        height: 180%;
+        padding-top: 0;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        box-shadow: 0 20px 30px #6f6f6f;
+
+    }
+
+    #nav3 #nav4 {
+        position: absolute;
+        left: 100%;
+    }
+
+    #nav5 #nav6 {
+        position: absolute;
+        left: 100%;
+        top: 25%;
+    }
+
+    section {
+        position: absolute;
+        top: 25%;
+        left: 20%;
+        width: 60%;
+        height: 40%;
+
+    }
+
+    .main-sec .alert-box p {
+        font-size: 10px;
+        line-height: 20px;
+
+    }
+
+    .btn {
+        width: 150%;
+        justify-content: left;
+    }
+
+    .btn #btn1 {
+        font-size: 10px;
+        width: 18%;
+        padding: 2%;
+    }
+
+    .btn #btn2 {
+        font-size: 10px;
+        width: 20%;
+        padding: 2%;
+        margin-left: 35px;
+
+    }
 }
