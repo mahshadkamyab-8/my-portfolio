@@ -18,6 +18,7 @@ body {
     font-family: 'vazir';
     direction: rtl;
     height: 100vh;
+    overflow: hidden;
 }
 
 h1 {
@@ -144,6 +145,6 @@ section .info a:hover {
     position: absolute;
     color: #d892ea;
     font-size: 17px;
-    top: 95%;
-    right: 84%;
+    top: 97%;
+    right: 4%;
 }
