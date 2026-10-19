@@ -63,3 +63,23 @@ body{
     top: 95%;
     right: 84%;
 }
+
+@media (max-width: 600px) {
+    .container{
+        width: 98%;
+    }
+    .content{
+        width: 100%;
+    }
+    #parag{
+        margin-right: 25px;
+        line-height: 23px;
+        font-size: 14px;
+    }
+    #para{
+        position: absolute;
+        left: 2%;
+        display: inline;
+        width: 50%;
+    }
+}

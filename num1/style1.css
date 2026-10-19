@@ -17,6 +17,7 @@ body {
     height: 100vh;
     background-color: #2893c4;
     position: relative;
+    overflow: hidden;
 }
 
 section {
@@ -82,6 +83,7 @@ header .navbar span {
 .content .contentBox {
     position: absolute;
     top: 25%;
+    left: 0%;
     width: 100%;
     display: flex;
     align-items: center;
@@ -102,7 +104,7 @@ header .navbar span {
     width: 50%;
 }
 
-.content .contentBox .textBox h2 {
+.content .contentBox .textBox h3 {
     color: #fff;
     font-weight: 900;
     font-size: 3.2rem;
@@ -110,7 +112,7 @@ header .navbar span {
 }
 
 
-.content .contentBox .textBox h2 span {
+.content .contentBox .textBox h3 span {
     color: #0ac752;
 }
 
@@ -157,4 +159,63 @@ header .navbar span {
     font-size: 17px;
     top: 95%;
     right: 84%;
+}
+
+@media (max-width: 600px) {
+    body {
+        overflow-y: auto;
+    }
+
+    .section {
+        position: relative;
+        width: 100vw;
+        height: 130vh;
+    }
+
+    .textBox {
+        position: absolute;
+        top: 0%;
+        left: 9%;
+        font-size: 10px;
+    }
+
+    h3 {
+        font-size: 25px !important;
+    }
+    #a1{
+        position: absolute;
+        right: 65%;
+       
+    }
+
+    .imgBox {
+        position: absolute;
+        top: 0%;
+        left: 55%;
+    }
+
+    #img1 {
+        width: 30%;
+        position: absolute;
+        left: 5%;
+    }
+
+    #img2 {
+        width: 30%;
+        position: absolute;
+        left: 33%;
+    }
+
+    #img3 {
+        width: 30%;
+        position: absolute;
+        left: 60%;
+    }
+    #para{
+        width: 100%;
+        position: absolute;
+        top: 10%;
+        right: 50%;
+    }
+
 }

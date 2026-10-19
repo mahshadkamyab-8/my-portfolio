@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="./style1.css">
     <title>Resume number 1</title>
 </head>
@@ -11,25 +13,44 @@
 <body>
     <section class="section">
         <header>
-            <div class="navbar">
-                <ul>
-                    <li class="top"><a href="#">Home</a></li>
-                    <li class="top"><a href="#">About Us</a></li>
-                    <li class="top"><a href="#">Contact Us</a></li>
-                    <li class="top"><a href="#">Products</a></li>
-                    <li class="top"><a href="#">Blogs</a></li>
-                </ul>
-                <span class="title">Special Edition</span>
-            </div>
+            <nav class="navbar navbar-expand-lg shadow-sm">
+                <div class="container-fluid">
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Features</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Models</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a class="navbar-brand fw-bold fs-md-4" href="#">Special Edition</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </nav>
         </header>
 
         <div class="content">
             <div class="container">
                 <div class="contentBox">
                     <div class="textBox">
-                        <h2>Coolest Custom <span>Car</span> Paint</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas purus viverra accumsan in nisl nisi. Arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque. In egestas erat imperdiet sed euismod nisi porta lorem mollis. Morbi tristique senectus et netus. Mattis pellentesque id nibh tortor id aliquet lectus proin. Sapien faucibus et molestie ac feugiat sed lectus vestibulum. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget. Dictum varius duis at consectetur lorem. Nisi vitae suscipit tellus mauris a diam maecenas sed enim. Velit ut tortor pretium viverra suspendisse potenti nullam.</p>
-                        <a href="#">Read more..</a>
+                        <h3>Coolest Custom <span>Car</span> Paint</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Egestas purus viverra accumsan in nisl nisi. Arcu cursus
+                            vitae congue mauris rhoncus aenean vel elit scelerisque. In egestas erat imperdiet sed
+                            euismod nisi porta lorem mollis. Morbi tristique senectus et netus. Mattis pellentesque id
+                            nibh tortor id aliquet lectus proin. Sapien faucibus et molestie ac feugiat sed lectus
+                            vestibulum. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget. Dictum
+                            varius duis at consectetur lorem. Nisi vitae suscipit tellus mauris a diam maecenas sed
+                            enim. Velit ut tortor pretium viverra suspendisse potenti nullam.</p>
+                        <a id="a1" href="#">Read more..</a>
                     </div>
                     <div class="imgBox">
                         <img src="./img/blue.png" class="bmw" alt="">
@@ -37,11 +58,11 @@
                 </div>
             </div>
             <ul class="bottom">
-                <li><a href="#"><img src="./img/blue.png" onclick="imageslider('./img/blue.png');changecolor('#2893c4')"
+                <li><a href="#"><img id="img1" src="./img/blue.png" onclick="imageslider('./img/blue.png');changecolor('#2893c4')"
                             alt=""></a></li>
-                <li><a href="#"><img src="./img/black.png"
+                <li><a href="#"><img id="img2" src="./img/black.png"
                             onclick="imageslider('./img/black.png');changecolor('#494747')" alt=""></a></li>
-                <li><a href="#"><img src="./img/red.png" onclick="imageslider('./img/red.png');changecolor('#9c3333')"
+                <li><a href="#"><img id="img3" src="./img/red.png" onclick="imageslider('./img/red.png');changecolor('#9c3333')"
                             alt=""></a></li>
 
             </ul>
@@ -50,6 +71,7 @@
     <p id="para">Designed by Mahshad Kamyab</p>
 
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./js1.js"></script>
 
 </body>

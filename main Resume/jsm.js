@@ -5,23 +5,26 @@ const btn3 = document.getElementById("btn3");
 
 // English version
 const original = `
-    <h4 class="fw-bold mb-4">
-        Hello, and welcome to my portfolio website.
-    </h4>
-    This website was created using HTML, CSS, Bootstrap and JavaScript.
-    I created this site to showcase my projects, skills, and experience.
-    Here, you can view the projects I have worked on. Thank you for visiting!
+    <div id="paragraph">
+        <h4 class="fw-bold mt-5 mb-4">Hello, and welcome to my portfolio website.</h4>
+            This website was created using HTML, CSS, Bootstrap and JavaScript. I
+            created this site to showcase my projects, skills, and experience. Here, you can view the
+            projects I
+            have worked on. Thank you for visiting!
+    </div>
 `;
 
 // Persian version
 const persian = `
-    <h4 class="fw-bold mb-4">
+    <div id="paragraph" class="me-4 mt-5">
+        <h4 class="fw-bold mb-4">
         سلام، به وب‌سایت نمونه‌کارهای من خوش آمدید.
-    </h4>
-    این وب‌سایت با استفاده از HTML، CSS ، Bootstrap و JavaScript ساخته شده است.
-    من این سایت را برای نمایش پروژه‌ها، مهارت‌ها و تجربیاتم ایجاد کردم.
-    در اینجا می‌توانید پروژه‌هایی را که روی آن‌ها کار کرده‌ام مشاهده کنید.
-    از بازدید شما متشکرم!
+        </h4>
+         این وب‌سایت با استفاده از HTML، CSS ، Bootstrap و JavaScript ساخته شده است.
+         من این سایت را برای نمایش پروژه‌ها، مهارت‌ها و تجربیاتم ایجاد کردم.
+         در اینجا می‌توانید پروژه‌هایی را که روی آن‌ها کار کرده‌ام مشاهده کنید.
+         از بازدید شما متشکرم!
+    </div>
 `;
 
 // Translate to Persian

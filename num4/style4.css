@@ -182,8 +182,18 @@ body {
 }
 #para {
     position: absolute;
-    color: #080808;
+    color: #ffffff;
     font-size: 17px;
     top: 95%;
     right: 84%;
+}
+@media (max-width: 600px) {
+    body{
+        overflow: hidden;
+    }
+    #para{
+        width: 100%;
+        position: absolute;
+        right: 50%;
+    }
 }
