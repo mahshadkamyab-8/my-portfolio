@@ -46,7 +46,7 @@
 
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     .photoshop-carousel .carousel-item img {
         height: 240px;
     }
@@ -112,7 +112,7 @@
 
     #svg2 {
         position: absolute;
-        top: 369%;
+        top: 365%;
     }
 
 }

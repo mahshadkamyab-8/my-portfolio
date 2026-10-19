@@ -187,13 +187,16 @@ body {
     top: 95%;
     right: 84%;
 }
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     body{
         overflow: hidden;
+        width: 100%;
     }
     #para{
+        font-size: 15px;
         width: 100%;
         position: absolute;
         right: 50%;
+        z-index: -1;
     }
 }

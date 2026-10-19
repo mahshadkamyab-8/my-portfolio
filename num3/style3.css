@@ -64,7 +64,7 @@ body{
     right: 84%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     .container{
         width: 98%;
     }
@@ -72,14 +72,18 @@ body{
         width: 100%;
     }
     #parag{
-        margin-right: 25px;
-        line-height: 23px;
-        font-size: 14px;
+        margin-right: 30px;
+        line-height: 20px;
+        font-size: 12px;
     }
     #para{
         position: absolute;
         left: 2%;
+        font-size: 15px;
         display: inline;
         width: 50%;
+    }
+    input::placeholder{
+        font-size: 15px;
     }
 }

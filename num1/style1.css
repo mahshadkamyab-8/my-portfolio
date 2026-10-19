@@ -161,9 +161,14 @@ header .navbar span {
     right: 84%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     body {
         overflow-y: auto;
+    }
+
+    .navbar {
+        width: 75%;
+        margin-inline: auto;
     }
 
     .section {
@@ -182,10 +187,11 @@ header .navbar span {
     h3 {
         font-size: 25px !important;
     }
-    #a1{
+
+    #a1 {
         position: absolute;
         right: 65%;
-       
+
     }
 
     .imgBox {
@@ -211,11 +217,13 @@ header .navbar span {
         position: absolute;
         left: 60%;
     }
-    #para{
-        width: 100%;
+
+    #para {
+        width: 50%;
+        font-size: 15px;
         position: absolute;
-        top: 10%;
-        right: 50%;
+        top: 135%;
+        right: 55%;
     }
 
 }
