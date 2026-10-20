@@ -164,6 +164,7 @@ header .navbar span {
 @media (max-width: 700px) {
     body {
         overflow-y: auto;
+        height: 100vh;
     }
 
     .navbar {
@@ -219,11 +220,10 @@ header .navbar span {
     }
 
     #para {
-        width: 50%;
-        font-size: 15px;
+        font-size: 8px;
         position: absolute;
-        top: 135%;
-        right: 55%;
+        top: 115%;
+        right: 10%;
     }
 
 }

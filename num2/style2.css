@@ -144,7 +144,7 @@ section .info a:hover {
 #para {
     position: absolute;
     color: #d892ea;
-    font-size: 17px;
+    font-size: 8px;
     top: 97%;
     right: 4%;
 }

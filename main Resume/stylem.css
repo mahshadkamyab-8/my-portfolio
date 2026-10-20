@@ -54,7 +54,12 @@
     body {
         position: relative;
     }
-    #paragraph{
+    #nav1{
+        justify-content: center;
+        align-items: center;
+    }
+
+    #paragraph {
         width: 100%;
     }
 
@@ -97,8 +102,7 @@
     }
 
     #svg1 {
-        position: absolute;
-        top: 175%;
+        visibility: hidden;
     }
 
     #card1,
@@ -111,8 +115,7 @@
     }
 
     #svg2 {
-        position: absolute;
-        top: 365%;
+        visibility: hidden;
     }
 
 }
